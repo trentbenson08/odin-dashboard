@@ -1,8 +1,9 @@
 
 #container{
     display: grid;
-    grid-template-columns: 256px 3fr;
-    grid-template-rows: 1fr 64px 5fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 200px 64px 5fr;
+    font-family: Arial, Helvetica, sans-serif;
 }
 img{
     width: 2rem;
@@ -11,33 +12,55 @@ h4{
     font-weight: 700;
     font-size: 1.25rem;
 }
+h5{
+    font-weight: 600;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
 
+:root{
+    --sidebar-col: #01172f;
+    --header-col: #1c3144;
+    --title-col: #548687;
+    --accent-col: #b0413e;
+    --card-col: #CAC4CE;
+}
+input{
+    border-radius: 8px;
+    border: none;
+    width: 32rem;
+    height: 1.5rem;
+    margin-left: 12px;
+}
 
 
 
 /*SIDEBAR*/
 #sidebar-container{
-
+    background-color: var(--sidebar-col);
     grid-row: 1/6;
     grid-column: 1/2;
     min-height: 100vh;
+    min-width: 350px;
+    color: white;
 }
 #sidebar-contents{
-    margin: 16px;
-}
-#sidebar-container h1{
+    margin: 32px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    font-weight: bolder;
 }
-#sidebar-container ul{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+#sidebar-contents h1{
+    font-size: 2rem;
     font-weight: bold;
-    margin-top: 24px;
 }
+#sidebar-contents ul{
+    font-size: 1.25rem;
+    margin-top: 64px;
+}
+
 #sidebar-container li{
-    margin-top: 8px;
+    margin-top: 32px;
 }
 
 
@@ -46,20 +69,21 @@ h4{
 
 /*HEADER*/
 #header-container{
-
+    background-color: var(--header-col);
     grid-row: 1/2;
     grid-column: 2/3;
-
+    color: white;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px rgb(146, 146, 146);
 }
 #searchbar img{
-    width: 1.5rem;
-    margin: 1rem;
+    padding: .75rem;
 }
 
 #searchbar{
+    margin-left: 32px;
     grid-row: auto;
     grid-column: 1/5;
     display: flex;
@@ -74,8 +98,9 @@ h4{
     grid-column: 5/7;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 16px;
+    margin-right: 32px;
 }
 #profile img{
     height: 2rem;
@@ -91,15 +116,15 @@ h4{
 
 #social-buttons{
     grid-row: 2;
-    grid-column: 4/7;
+    grid-column: 6/7;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
     gap: 32px;
+    margin-right: 32px;
 }
 #social-buttons .button{
     border: none;
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,6 +135,7 @@ h4{
     grid-column: 1/4;
     display: flex;
     align-items: center;
+    margin-left: 32px;
 }
 #greeting img{
     margin-right: 1rem;
@@ -125,9 +151,13 @@ h4{
     display: grid;
     grid-template-columns: 5fr minmax(256px, 2fr);
 }
+#content-title-one{
+    margin-left: 32px;
+}
 #content-title-two{
     grid-column: 2/3;
 }
+
 .content-title{
     align-self: end;
     font-size: 1.5rem;
@@ -146,9 +176,9 @@ h4{
 
 #article-container{
     padding: 32px;
-    background-color: lightblue;
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(128px, 1fr));
     gap: 32px;
 }
@@ -159,8 +189,8 @@ h4{
     align-items: center;
 }
 .card{
-    background-color: white;
-    border-left: 8px solid lightslategray;
+    background-color: var(--card-col);
+    border-left: 8px solid var(--accent-col);
     border-radius: 8px;
     height: 100%;
     width: 100%;
@@ -182,15 +212,39 @@ h4{
     margin: 16px 0px 0px 16px;
     overflow: hidden;
 } 
-.card-info h4{
-    margin-bottom: 6px;
+p{
+    margin-top: 6px;
 }
-#aside{
+#aside-container{
     display: grid;
-    grid-template-rows: 1fr 64px 1fr ;
+    grid-template-rows: 1fr 64px 1fr;
+    padding-bottom: 18px;
 }
 
-.aside{
+.aside-card{
+    background-color: var(--card-col);
+    border-left: 8px solid var(--title-col);
+    height: 90%;
+    border-radius: 8px;
+    margin-top: 32px;
+    margin-right: 32px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1px;
+}
 
+.aside-two-info,
+.aside-one-info{
+    padding: 16px;
+}
 
+.aside-two-info{
+    gap: 8px;
+}
+
+.aside-data-misc{
+    display: flex;
+    align-items: center;
 }
