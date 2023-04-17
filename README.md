@@ -25,7 +25,7 @@ This repository contains my code for the 'Admin Dashboard' project found in The 
 <div align="center">
 
 <a href="https://linkedin.com/in/trentbenson08" target="_blank">
-<img src="https://img.shields.io/badge/linkedin:  0xabdulkhalid-%2300acee.svg?color=405DE6&style=for-the-badge&logo=linkedin&logoColor=white" alt=linkedin style="margin-bottom: 5px;"/>
+<img src=https://img.shields.io/badge/linkedin:%20%20trentbenson08-%2300acee.svg?color=405DE6&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;"/>
 </a>
 
 </div>
