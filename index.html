@@ -7,6 +7,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div id="container">
@@ -16,17 +17,17 @@
             <div id="sidebar-contents">
                 <h1>Dashboard</h1>
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Communities</a></li>
                 </ul>
                 <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy</a></li>
                 </ul>
             </div>
         </div>
@@ -34,20 +35,20 @@
         <!--Header-->
         <div id="header-container">
             <div id="searchbar">
-                <button>Search</button>
-                <input type="text">
+                <img src="./img/magnify.svg" alt="">
+                <input id="search" type="text">
             </div>
 
             <div id="profile">
-                <button>noti</button>
-                <img src="./img/profile-picture.svg" alt="profilePic">
+                <div class="button"><img src="./img/bell.svg" alt=""></div>
+                <div class="button"><img src="./img/profile-picture.svg" alt="profilePic"></div>
                 <p>Morgan Oakley</p>
             </div>
 
             <div id="social-buttons">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+                <div class="button"><img src="./img/plus-outline.svg" alt="">New</img></div>
+                <div class="button"><img src="./img/upload-outline.svg" alt="">Upload</img></div>
+                <div class="button"><img src="./img/share-outline.svg" alt="">Share</img></div>
             </div>
 
             <div id="greeting">
@@ -60,21 +61,118 @@
 
         </div>
 
-        <div class="title-container">title Container</div>
+        <div id="title-container">
+            <div id="content-title-one" class="content-title">
+                title container
+            </div>
+            <div id="content-title-two" class="content-title">
+                title container
+            </div>
+        </div>
 
         <div id="content-container">
             
             <div id="article-container">
-                <div class="card">card Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis voluptatum cum id tempore odit officiis! Pariatur quasi totam iste. Commodi eaque architecto dicta quia voluptas? Ut repellendus vitae modi perspiciatis quae ipsam? Neque accusamus fuga sequi. Aliquam quas vitae provident mollitia? Temporibus in facere assumenda laboriosam, exercitationem, voluptatibus laudantium id, tempore libero repudiandae natus quas maiores nobis animi consequuntur eos esse qui fugit. Voluptate soluta sit incidunt placeat quam corrupti velit, nostrum atque minus culpa odio libero consectetur harum, maiores commodi qui cum reiciendis est! Ab unde sunt soluta ut! Quidem culpa voluptate, accusantium id autem nesciunt perspiciatis animi quasi?</div>
-                <div class="card">card Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis voluptatum cum id tempore odit officiis! Pariatur quasi totam iste. Commodi eaque architecto dicta quia voluptas? Ut repellendus vitae modi perspiciatis quae ipsam? Neque accusamus fuga sequi. Aliquam quas vitae provident mollitia? Temporibus in facere assumenda laboriosam, exercitationem, voluptatibus laudantium id, tempore libero repudiandae natus quas maiores nobis animi consequuntur eos esse qui fugit. Voluptate soluta sit incidunt placeat quam corrupti velit, nostrum atque minus culpa odio libero consectetur harum, maiores commodi qui cum reiciendis est! Ab unde sunt soluta ut! Quidem culpa voluptate, accusantium id autem nesciunt perspiciatis animi quasi?</div>
-                <div class="card">card Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis voluptatum cum id tempore odit officiis! Pariatur quasi totam iste. Commodi eaque architecto dicta quia voluptas? Ut repellendus vitae modi perspiciatis quae ipsam? Neque accusamus fuga sequi. Aliquam quas vitae provident mollitia? Temporibus in facere assumenda laboriosam, exercitationem, voluptatibus laudantium id, tempore libero repudiandae natus quas maiores nobis animi consequuntur eos esse qui fugit. Voluptate soluta sit incidunt placeat quam corrupti velit, nostrum atque minus culpa odio libero consectetur harum, maiores commodi qui cum reiciendis est! Ab unde sunt soluta ut! Quidem culpa voluptate, accusantium id autem nesciunt perspiciatis animi quasi?</div>
-                <div class="card">card Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis voluptatum cum id tempore odit officiis! Pariatur quasi totam iste. Commodi eaque architecto dicta quia voluptas? Ut repellendus vitae modi perspiciatis quae ipsam? Neque accusamus fuga sequi. Aliquam quas vitae provident mollitia? Temporibus in facere assumenda laboriosam, exercitationem, voluptatibus laudantium id, tempore libero repudiandae natus quas maiores nobis animi consequuntur eos esse qui fugit. Voluptate soluta sit incidunt placeat quam corrupti velit, nostrum atque minus culpa odio libero consectetur harum, maiores commodi qui cum reiciendis est! Ab unde sunt soluta ut! Quidem culpa voluptate, accusantium id autem nesciunt perspiciatis animi quasi?</div>
-                <div class="card">card Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis voluptatum cum id tempore odit officiis! Pariatur quasi totam iste. Commodi eaque architecto dicta quia voluptas? Ut repellendus vitae modi perspiciatis quae ipsam? Neque accusamus fuga sequi. Aliquam quas vitae provident mollitia? Temporibus in facere assumenda laboriosam, exercitationem, voluptatibus laudantium id, tempore libero repudiandae natus quas maiores nobis animi consequuntur eos esse qui fugit. Voluptate soluta sit incidunt placeat quam corrupti velit, nostrum atque minus culpa odio libero consectetur harum, maiores commodi qui cum reiciendis est! Ab unde sunt soluta ut! Quidem culpa voluptate, accusantium id autem nesciunt perspiciatis animi quasi?</div>
-                <div class="card">card Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis voluptatum cum id tempore odit officiis! Pariatur quasi totam iste. Commodi eaque architecto dicta quia voluptas? Ut repellendus vitae modi perspiciatis quae ipsam? Neque accusamus fuga sequi. Aliquam quas vitae provident mollitia? Temporibus in facere assumenda laboriosam, exercitationem, voluptatibus laudantium id, tempore libero repudiandae natus quas maiores nobis animi consequuntur eos esse qui fugit. Voluptate soluta sit incidunt placeat quam corrupti velit, nostrum atque minus culpa odio libero consectetur harum, maiores commodi qui cum reiciendis est! Ab unde sunt soluta ut! Quidem culpa voluptate, accusantium id autem nesciunt perspiciatis animi quasi?</div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-info">
+                            <h4>
+                                Super Cool Project
+                            </h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat corrupti dignissimos sapiente? Omnis deleniti numquam, veniam quod odio soluta ut eligendi iusto, autem iure, quasi atque. Deserunt molestias officiis suscipit?</p>
+                        </div>
+                        <div class="card-btn">
+                            <div class="button"><img src="./img/star-plus-outline.svg" alt=""></div>
+                            <div class="button"><img src="./img/eye-plus-outline.svg" alt=""></div>
+                            <div class="button"><img src="./img/source-fork.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-info">
+                            <h4>
+                                Super Cool Project
+                            </h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat corrupti dignissimos sapiente? Omnis deleniti numquam, veniam quod odio soluta ut eligendi iusto, autem iure, quasi atque. Deserunt molestias officiis suscipit?</p>
+                        </div>
+                        <div class="card-btn">
+                            <div class="button"><img src="./img/star-plus-outline.svg" alt=""></div>
+                            <div class="button"><img src="./img/eye-plus-outline.svg" alt=""></div>
+                            <div class="button"><img src="./img/source-fork.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-info">
+                            <h4>
+                                Super Cool Project
+                            </h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat corrupti dignissimos sapiente? Omnis deleniti numquam, veniam quod odio soluta ut eligendi iusto, autem iure, quasi atque. Deserunt molestias officiis suscipit?</p>
+                        </div>
+                        <div class="card-btn">
+                            <div class="button"><img src="./img/star-plus-outline.svg" alt=""></div>
+                            <div class="button"><img src="./img/eye-plus-outline.svg" alt=""></div>
+                            <div class="button"><img src="./img/source-fork.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-info">
+                            <h4>
+                                Super Cool Project
+                            </h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat corrupti dignissimos sapiente? Omnis deleniti numquam, veniam quod odio soluta ut eligendi iusto, autem iure, quasi atque. Deserunt molestias officiis suscipit?</p>
+                        </div>
+                        <div class="card-btn">
+                            <div class="button"><img src="./img/star-plus-outline.svg" alt=""></div>
+                            <div class="button"><img src="./img/eye-plus-outline.svg" alt=""></div>
+                            <div class="button"><img src="./img/source-fork.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-info">
+                            <h4>
+                                Super Cool Project
+                            </h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat corrupti dignissimos sapiente? Omnis deleniti numquam, veniam quod odio soluta ut eligendi iusto, autem iure, quasi atque. Deserunt molestias officiis suscipit?</p>
+                        </div>
+                        <div class="card-btn">
+                            <div class="button"><img src="./img/star-plus-outline.svg" alt=""></div>
+                            <div class="button"><img src="./img/eye-plus-outline.svg" alt=""></div>
+                            <div class="button"><img src="./img/source-fork.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-info">
+                            <h4>
+                                Super Cool Project
+                            </h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat corrupti dignissimos sapiente? Omnis deleniti numquam, veniam quod odio soluta ut eligendi iusto, autem iure, quasi atque. Deserunt molestias officiis suscipit?</p>
+                        </div>
+                        <div class="card-btn">
+                            <div class="button"><img src="./img/star-plus-outline.svg" alt=""></div>
+                            <div class="button"><img src="./img/eye-plus-outline.svg" alt=""></div>
+                            <div class="button"><img src="./img/source-fork.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="aside">
                 <div class="aside">aside-one</div>
-                <div class="title-container"></div>
+                <div id="content-title-three" class="content-title">title container</div>
                 <div class="aside">aside-two</div>
             </div>
         </div>
