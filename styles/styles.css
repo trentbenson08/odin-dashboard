@@ -45,8 +45,10 @@ input{
     min-height: 100vh;
     min-width: 350px;
     color: white;
+    position: relative;
 }
 #sidebar-contents{
+    position:fixed;
     margin: 32px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -77,6 +79,8 @@ input{
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px rgb(146, 146, 146);
+    position: sticky;
+    top: -6.5rem;
 }
 #searchbar img{
     padding: .75rem;
@@ -122,6 +126,7 @@ input{
     align-items: center;
     gap: 32px;
     margin-right: 32px;
+    height: auto;
 }
 #social-buttons .button{
     border: none;
@@ -136,6 +141,7 @@ input{
     display: flex;
     align-items: center;
     margin-left: 32px;
+    height: auto;
 }
 #greeting img{
     margin-right: 1rem;
@@ -144,12 +150,10 @@ input{
 
 
 
-
-
 /*TITLE*/
 #title-container{
     display: grid;
-    grid-template-columns: 5fr minmax(256px, 2fr);
+    grid-template-columns: 2fr 1fr;
 }
 #content-title-one{
     margin-left: 32px;
@@ -171,14 +175,15 @@ input{
 /*CONTENT*/
 #content-container{
     display: grid;
-    grid-template-columns: 5fr minmax(256px, 2fr);
+    grid-template-columns: 2fr 1fr;
+    
 }
 
 #article-container{
     padding: 32px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(128px, 1fr));
     gap: 32px;
 }
