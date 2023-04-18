@@ -184,8 +184,9 @@ input{
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(128px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(256px, 1fr));
     gap: 32px;
+    overflow: hidden;
 }
 
 .card-container{
