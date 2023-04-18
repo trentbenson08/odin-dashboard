@@ -1,6 +1,7 @@
 # Admin Dashboard
 
-![alt text](./misc/Screenshot%202023-04-16%20at%2019-45-21%20Dashboard.png)
+![alt text](./misc/Screenshot%202023-04-18%20at%2011-32-23%20Dashboard.png)
+![alt text](./misc/Screenshot%202023-04-18%20at%2011-32-35%20Dashboard.png)
 
 
 ## Description
